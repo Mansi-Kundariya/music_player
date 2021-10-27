@@ -1,0 +1,226 @@
+/* Google Fonts Import Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background: #1b1a1a9e;
+    z-index: 100;
+}
+
+body {
+    background-color: black;
+}
+
+.home {
+    margin-top: 2rem;
+}
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+    background-color: black;
+    left: 16%;
+}
+
+.home-section .home-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.playlists {
+    height: 100%;
+    width: 100%;
+}
+
+.playlist {
+    height: 22rem;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 83%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 9px 9px 20px 0px #02f0f8e0;
+    display: flex;
+    left: 12%;
+    flex-direction: row;
+}
+
+.playlist:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.upper {
+    height: 15rem;
+}
+
+.image-section {
+    width: 40%;
+    flex-direction: row;
+}
+
+.image-section img {
+    height: 22rem;
+    width: 26rem;
+}
+
+.info {
+    width: 60%;
+    flex-direction: row;
+    float: right;
+    color: white;
+    margin-left: 10rem;
+    margin-top: 18%;
+    margin-left: 7rem;
+    font-size: 2rem;
+}
+
+.info h2 {
+    font-family: serif;
+    text-shadow: 4px 2px red;
+    color: #f5d9d9;
+}
+
+.logo_name {
+    display: flex;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    width: 22rem;
+    height: 7rem;
+    margin-left: -3rem;
+    z-index: 1;
+}
+
+.search svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.home {
+    display: flex;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.home h6 {
+    margin-left: 0.5rem;
+    font-family: serif;
+}
+
+.search {
+    display: flex;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: lighter;
+}
+
+.search h6 {
+    color: whitesmoke;
+    font-family: serif;
+}
+
+.element-navbar {
+    margin-top: 4rem;
+}
+
+.element-navbar .home,
+.element-navbar .search {
+    margin-top: 1rem;
+}
+
+.muzieknootjes {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    /* height: 100px; */
+    margin-top: 20rem;
+    border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5,
+.noot-6,
+.noot-7,
+.noot-8,
+.noot-9,
+.noot-10 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+    color: #02f0f8e0;
+    z-index: -1;
+}
+
+.noot-1 {
+    top: -90px;
+    left: 0;
+    animation-delay: 0.5s;
+}
+
+.noot-2 {
+    top: -170px;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.noot-3 {
+    top: 0px;
+    left: 55%;
+    animation-delay: 2.5s;
+}
+
+.noot-4 {
+    top: -150px;
+    left: 90%;
+    animation-delay: 2s;
+}
+
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(50%, -50%);
+    }
+    80% {
+        opacity: 0;
+        transform: scale(1.5) translate(100%, -100%);
+    }
+    100% {
+        transform: scale(1.5) translate(100%, -100%);
+        opacity: 0;
+    }
+}
